@@ -1,0 +1,852 @@
+[
+    {
+        "isRented": false,
+        "priceCathegory": "premium",
+        "basePrice": "3.00",
+        "amountOfAvaliable": 77758,
+        "model": "Dodge F-150",
+        "avgFuelConsumption": 82977,
+        "id": "1",
+        "currentLocation": [
+            {
+                "city": "Silver Spring",
+                "gasPrice": 6228,
+                "id": "1",
+                "carId": "1"
+            }
+        ]
+    },
+    {
+        "isRented": true,
+        "priceCathegory": "premium",
+        "basePrice": "886.00",
+        "amountOfAvaliable": 58052,
+        "model": "Honda Wrangler",
+        "avgFuelConsumption": 52523,
+        "id": "2",
+        "currentLocation": [
+            {
+                "city": "San Tan Valley",
+                "gasPrice": 78159,
+                "id": "2",
+                "carId": "2"
+            }
+        ]
+    },
+    {
+        "isRented": false,
+        "priceCathegory": "premium",
+        "basePrice": "642.00",
+        "amountOfAvaliable": 7544,
+        "model": "Nissan Grand Caravan",
+        "avgFuelConsumption": 25601,
+        "id": "3",
+        "currentLocation": [
+            {
+                "city": "Harrisonburg",
+                "gasPrice": 10304,
+                "id": "3",
+                "carId": "3"
+            }
+        ]
+    },
+    {
+        "isRented": true,
+        "priceCathegory": "premium",
+        "basePrice": "634.00",
+        "amountOfAvaliable": 67123,
+        "model": "Hyundai 2",
+        "avgFuelConsumption": 97726,
+        "id": "4",
+        "currentLocation": [
+            {
+                "city": "Oakland",
+                "gasPrice": 60960,
+                "id": "4",
+                "carId": "4"
+            }
+        ]
+    },
+    {
+        "isRented": true,
+        "priceCathegory": "medium",
+        "basePrice": "486.00",
+        "amountOfAvaliable": 59536,
+        "model": "Cadillac Camaro",
+        "avgFuelConsumption": 45580,
+        "id": "5",
+        "currentLocation": [
+            {
+                "city": "Johnson City",
+                "gasPrice": 9459,
+                "id": "5",
+                "carId": "5"
+            }
+        ]
+    },
+    {
+        "isRented": true,
+        "priceCathegory": "premium",
+        "basePrice": "844.00",
+        "amountOfAvaliable": 10210,
+        "model": "Volvo Accord",
+        "avgFuelConsumption": 24092,
+        "id": "6",
+        "currentLocation": [
+            {
+                "city": "Urbana",
+                "gasPrice": 4993,
+                "id": "6",
+                "carId": "6"
+            }
+        ]
+    },
+    {
+        "isRented": true,
+        "priceCathegory": "medium",
+        "basePrice": "281.00",
+        "amountOfAvaliable": 39474,
+        "model": "Hyundai PT Cruiser",
+        "avgFuelConsumption": 38650,
+        "id": "7",
+        "currentLocation": [
+            {
+                "city": "Joplin",
+                "gasPrice": 2017,
+                "id": "7",
+                "carId": "7"
+            }
+        ]
+    },
+    {
+        "isRented": true,
+        "priceCathegory": "medium",
+        "basePrice": "448.00",
+        "amountOfAvaliable": 29503,
+        "model": "Bentley Model 3",
+        "avgFuelConsumption": 65748,
+        "id": "8",
+        "currentLocation": [
+            {
+                "city": "Lake Charles",
+                "gasPrice": 5338,
+                "id": "8",
+                "carId": "8"
+            }
+        ]
+    },
+    {
+        "isRented": false,
+        "priceCathegory": "medium",
+        "basePrice": "232.00",
+        "amountOfAvaliable": 70561,
+        "model": "Tesla Civic",
+        "avgFuelConsumption": 64209,
+        "id": "9",
+        "currentLocation": [
+            {
+                "city": "Enid",
+                "gasPrice": 89118,
+                "id": "9",
+                "carId": "9"
+            }
+        ]
+    },
+    {
+        "isRented": false,
+        "priceCathegory": "premium",
+        "basePrice": "16.00",
+        "amountOfAvaliable": 2503,
+        "model": "Rolls Royce Altima",
+        "avgFuelConsumption": 45171,
+        "id": "10",
+        "currentLocation": [
+            {
+                "city": "Bismarck",
+                "gasPrice": 55821,
+                "id": "10",
+                "carId": "10"
+            }
+        ]
+    },
+    {
+        "isRented": false,
+        "priceCathegory": "medium",
+        "basePrice": "812.00",
+        "amountOfAvaliable": 97932,
+        "model": "Jeep Prius",
+        "avgFuelConsumption": 7542,
+        "id": "11",
+        "currentLocation": [
+            {
+                "city": "Barnstable Town",
+                "gasPrice": 54094,
+                "id": "11",
+                "carId": "11"
+            }
+        ]
+    },
+    {
+        "isRented": true,
+        "priceCathegory": "medium",
+        "basePrice": "669.00",
+        "amountOfAvaliable": 57020,
+        "model": "Honda Accord",
+        "avgFuelConsumption": 93269,
+        "id": "12",
+        "currentLocation": [
+            {
+                "city": "New Bedford",
+                "gasPrice": 6842,
+                "id": "12",
+                "carId": "12"
+            }
+        ]
+    },
+    {
+        "isRented": false,
+        "priceCathegory": "premium",
+        "basePrice": "830.00",
+        "amountOfAvaliable": 26674,
+        "model": "Mercedes Benz Wrangler",
+        "avgFuelConsumption": 8531,
+        "id": "13",
+        "currentLocation": [
+            {
+                "city": "Riverton",
+                "gasPrice": 11158,
+                "id": "13",
+                "carId": "13"
+            }
+        ]
+    },
+    {
+        "isRented": false,
+        "priceCathegory": "medium",
+        "basePrice": "227.00",
+        "amountOfAvaliable": 79422,
+        "model": "Rolls Royce Model S",
+        "avgFuelConsumption": 16345,
+        "id": "14",
+        "currentLocation": [
+            {
+                "city": "National City",
+                "gasPrice": 84800,
+                "id": "14",
+                "carId": "14"
+            }
+        ]
+    },
+    {
+        "isRented": true,
+        "priceCathegory": "medium",
+        "basePrice": "853.00",
+        "amountOfAvaliable": 59079,
+        "model": "Porsche Fiesta",
+        "avgFuelConsumption": 71173,
+        "id": "15",
+        "currentLocation": [
+            {
+                "city": "Sayreville",
+                "gasPrice": 37380,
+                "id": "15",
+                "carId": "15"
+            }
+        ]
+    },
+    {
+        "isRented": false,
+        "priceCathegory": "premium",
+        "basePrice": "846.00",
+        "amountOfAvaliable": 40420,
+        "model": "Rolls Royce ATS",
+        "avgFuelConsumption": 77424,
+        "id": "16",
+        "currentLocation": [
+            {
+                "city": "Owensboro",
+                "gasPrice": 24439,
+                "id": "16",
+                "carId": "16"
+            }
+        ]
+    },
+    {
+        "isRented": true,
+        "priceCathegory": "medium",
+        "basePrice": "19.00",
+        "amountOfAvaliable": 88415,
+        "model": "Lamborghini 2",
+        "avgFuelConsumption": 29018,
+        "id": "17",
+        "currentLocation": [
+            {
+                "city": "Coral Springs",
+                "gasPrice": 97464,
+                "id": "17",
+                "carId": "17"
+            }
+        ]
+    },
+    {
+        "isRented": false,
+        "priceCathegory": "medium",
+        "basePrice": "493.00",
+        "amountOfAvaliable": 89548,
+        "model": "Bugatti Grand Caravan",
+        "avgFuelConsumption": 52176,
+        "id": "18",
+        "currentLocation": [
+            {
+                "city": "Peabody",
+                "gasPrice": 27994,
+                "id": "18",
+                "carId": "18"
+            }
+        ]
+    },
+    {
+        "isRented": true,
+        "priceCathegory": "medium",
+        "basePrice": "677.00",
+        "amountOfAvaliable": 37033,
+        "model": "Chrysler ATS",
+        "avgFuelConsumption": 87973,
+        "id": "19",
+        "currentLocation": [
+            {
+                "city": "Longmont",
+                "gasPrice": 78667,
+                "id": "19",
+                "carId": "19"
+            }
+        ]
+    },
+    {
+        "isRented": true,
+        "priceCathegory": "medium",
+        "basePrice": "202.00",
+        "amountOfAvaliable": 17978,
+        "model": "Bugatti ATS",
+        "avgFuelConsumption": 28930,
+        "id": "20",
+        "currentLocation": [
+            {
+                "city": "Dublin",
+                "gasPrice": 1328,
+                "id": "20",
+                "carId": "20"
+            }
+        ]
+    },
+    {
+        "isRented": false,
+        "priceCathegory": "basic",
+        "basePrice": "401.00",
+        "amountOfAvaliable": 81520,
+        "model": "Porsche Model T",
+        "avgFuelConsumption": 97406,
+        "id": "21",
+        "currentLocation": [
+            {
+                "city": "Hillsboro",
+                "gasPrice": 56983,
+                "id": "21",
+                "carId": "21"
+            }
+        ]
+    },
+    {
+        "isRented": false,
+        "priceCathegory": "basic",
+        "basePrice": "904.00",
+        "amountOfAvaliable": 77098,
+        "model": "Jaguar A4",
+        "avgFuelConsumption": 39085,
+        "id": "22",
+        "currentLocation": [
+            {
+                "city": "Yuma",
+                "gasPrice": 62822,
+                "id": "22",
+                "carId": "22"
+            }
+        ]
+    },
+    {
+        "isRented": true,
+        "priceCathegory": "basic",
+        "basePrice": "908.00",
+        "amountOfAvaliable": 1353,
+        "model": "Chrysler LeBaron",
+        "avgFuelConsumption": 9781,
+        "id": "23",
+        "currentLocation": [
+            {
+                "city": "Strongsville",
+                "gasPrice": 55689,
+                "id": "23",
+                "carId": "23"
+            }
+        ]
+    },
+    {
+        "isRented": false,
+        "priceCathegory": "basic",
+        "basePrice": "553.00",
+        "amountOfAvaliable": 8665,
+        "model": "Nissan Wrangler",
+        "avgFuelConsumption": 45022,
+        "id": "24",
+        "currentLocation": [
+            {
+                "city": "Waukegan",
+                "gasPrice": 61652,
+                "id": "24",
+                "carId": "24"
+            }
+        ]
+    },
+    {
+        "isRented": false,
+        "priceCathegory": "basic",
+        "basePrice": "808.00",
+        "amountOfAvaliable": 28850,
+        "model": "Lamborghini Challenger",
+        "avgFuelConsumption": 70017,
+        "id": "25",
+        "currentLocation": [
+            {
+                "city": "Yucaipa",
+                "gasPrice": 29896,
+                "id": "25",
+                "carId": "25"
+            }
+        ]
+    },
+    {
+        "isRented": false,
+        "priceCathegory": "basic",
+        "basePrice": "16.00",
+        "amountOfAvaliable": 33764,
+        "model": "Smart Roadster",
+        "avgFuelConsumption": 20160,
+        "id": "26",
+        "currentLocation": [
+            {
+                "city": "Azusa",
+                "gasPrice": 35671,
+                "id": "26",
+                "carId": "26"
+            }
+        ]
+    },
+    {
+        "isRented": true,
+        "priceCathegory": "basic",
+        "basePrice": "574.00",
+        "amountOfAvaliable": 43242,
+        "model": "Lamborghini Volt",
+        "avgFuelConsumption": 49355,
+        "id": "27",
+        "currentLocation": [
+            {
+                "city": "Houston",
+                "gasPrice": 46373,
+                "id": "27",
+                "carId": "27"
+            }
+        ]
+    },
+    {
+        "isRented": false,
+        "priceCathegory": "basic",
+        "basePrice": "890.00",
+        "amountOfAvaliable": 82149,
+        "model": "Nissan Beetle",
+        "avgFuelConsumption": 99564,
+        "id": "28",
+        "currentLocation": [
+            {
+                "city": "Blaine",
+                "gasPrice": 27615,
+                "id": "28",
+                "carId": "28"
+            }
+        ]
+    },
+    {
+        "isRented": false,
+        "priceCathegory": "basic",
+        "basePrice": "134.00",
+        "amountOfAvaliable": 81289,
+        "model": "Mazda XC90",
+        "avgFuelConsumption": 68795,
+        "id": "29",
+        "currentLocation": [
+            {
+                "city": "Doral",
+                "gasPrice": 80091,
+                "id": "29",
+                "carId": "29"
+            }
+        ]
+    },
+    {
+        "isRented": false,
+        "priceCathegory": "basic",
+        "basePrice": "302.00",
+        "amountOfAvaliable": 65670,
+        "model": "Smart Model 3",
+        "avgFuelConsumption": 29076,
+        "id": "30",
+        "currentLocation": [
+            {
+                "city": "Broomfield",
+                "gasPrice": 13182,
+                "id": "30",
+                "carId": "30"
+            }
+        ]
+    },
+    {
+        "isRented": true,
+        "priceCathegory": "basic",
+        "basePrice": "307.00",
+        "amountOfAvaliable": 27030,
+        "model": "Maserati Model Y",
+        "avgFuelConsumption": 33630,
+        "id": "31",
+        "currentLocation": [
+            {
+                "city": "Gary",
+                "gasPrice": 35413,
+                "id": "31",
+                "carId": "31"
+            }
+        ]
+    },
+    {
+        "isRented": false,
+        "priceCathegory": "basic",
+        "basePrice": "178.00",
+        "amountOfAvaliable": 86573,
+        "model": "Aston Martin Golf",
+        "avgFuelConsumption": 61559,
+        "id": "32",
+        "currentLocation": [
+            {
+                "city": "Logan",
+                "gasPrice": 42222,
+                "id": "32",
+                "carId": "32"
+            }
+        ]
+    },
+    {
+        "isRented": false,
+        "priceCathegory": "basic",
+        "basePrice": "168.00",
+        "amountOfAvaliable": 82279,
+        "model": "Mercedes Benz Camry",
+        "avgFuelConsumption": 25875,
+        "id": "33",
+        "currentLocation": [
+            {
+                "city": "Lorain",
+                "gasPrice": 18205,
+                "id": "33",
+                "carId": "33"
+            }
+        ]
+    },
+    {
+        "isRented": false,
+        "priceCathegory": "basic",
+        "basePrice": "462.00",
+        "amountOfAvaliable": 11141,
+        "model": "Volkswagen A8",
+        "avgFuelConsumption": 42538,
+        "id": "34",
+        "currentLocation": [
+            {
+                "city": "Tulsa",
+                "gasPrice": 52551,
+                "id": "34",
+                "carId": "34"
+            }
+        ]
+    },
+    {
+        "isRented": true,
+        "priceCathegory": "basic",
+        "basePrice": "161.00",
+        "amountOfAvaliable": 89983,
+        "model": "Nissan 911",
+        "avgFuelConsumption": 54632,
+        "id": "35",
+        "currentLocation": [
+            {
+                "city": "Mayaguez",
+                "gasPrice": 58608,
+                "id": "35",
+                "carId": "35"
+            }
+        ]
+    },
+    {
+        "isRented": true,
+        "priceCathegory": "basic",
+        "basePrice": "126.00",
+        "amountOfAvaliable": 67163,
+        "model": "Honda Jetta",
+        "avgFuelConsumption": 81132,
+        "id": "36",
+        "currentLocation": [
+            {
+                "city": "Hoboken",
+                "gasPrice": 46101,
+                "id": "36",
+                "carId": "36"
+            }
+        ]
+    },
+    {
+        "isRented": false,
+        "priceCathegory": "basic",
+        "basePrice": "114.00",
+        "amountOfAvaliable": 66185,
+        "model": "Audi Colorado",
+        "avgFuelConsumption": 85365,
+        "id": "37",
+        "currentLocation": [
+            {
+                "city": "Brookline",
+                "gasPrice": 81207,
+                "id": "37",
+                "carId": "37"
+            }
+        ]
+    },
+    {
+        "isRented": true,
+        "priceCathegory": "premium",
+        "basePrice": "393.00",
+        "amountOfAvaliable": 10711,
+        "model": "Honda Model 3",
+        "avgFuelConsumption": 67025,
+        "id": "38",
+        "currentLocation": [
+            {
+                "city": "Thousand Oaks",
+                "gasPrice": 98296,
+                "id": "38",
+                "carId": "38"
+            }
+        ]
+    },
+    {
+        "isRented": true,
+        "priceCathegory": "premium",
+        "basePrice": "841.00",
+        "amountOfAvaliable": 64473,
+        "model": "Bugatti 2",
+        "avgFuelConsumption": 73581,
+        "id": "39",
+        "currentLocation": [
+            {
+                "city": "Hammond",
+                "gasPrice": 77511,
+                "id": "39",
+                "carId": "39"
+            }
+        ]
+    },
+    {
+        "isRented": true,
+        "priceCathegory": "basic",
+        "basePrice": "77.00",
+        "amountOfAvaliable": 23148,
+        "model": "Cadillac Jetta",
+        "avgFuelConsumption": 32946,
+        "id": "40",
+        "currentLocation": [
+            {
+                "city": "Rancho Santa Margarita",
+                "gasPrice": 36873,
+                "id": "40",
+                "carId": "40"
+            }
+        ]
+    },
+    {
+        "isRented": false,
+        "priceCathegory": "basic",
+        "basePrice": "655.00",
+        "amountOfAvaliable": 92377,
+        "model": "Ford Golf",
+        "avgFuelConsumption": 11333,
+        "id": "41",
+        "currentLocation": [
+            {
+                "city": "Castle Rock",
+                "gasPrice": 21793,
+                "id": "41",
+                "carId": "41"
+            }
+        ]
+    },
+    {
+        "isRented": true,
+        "priceCathegory": "standard",
+        "basePrice": "807.00",
+        "amountOfAvaliable": 49993,
+        "model": "Jeep Civic",
+        "avgFuelConsumption": 63853,
+        "id": "42",
+        "currentLocation": [
+            {
+                "city": "Cuyahoga Falls",
+                "gasPrice": 48690,
+                "id": "42",
+                "carId": "42"
+            }
+        ]
+    },
+    {
+        "isRented": true,
+        "priceCathegory": "standard",
+        "basePrice": "244.00",
+        "amountOfAvaliable": 72086,
+        "model": "Ferrari Challenger",
+        "avgFuelConsumption": 8721,
+        "id": "43",
+        "currentLocation": [
+            {
+                "city": "Richardson",
+                "gasPrice": 84405,
+                "id": "43",
+                "carId": "43"
+            }
+        ]
+    },
+    {
+        "isRented": true,
+        "priceCathegory": "standard",
+        "basePrice": "937.00",
+        "amountOfAvaliable": 20633,
+        "model": "Bentley Ranchero",
+        "avgFuelConsumption": 44400,
+        "id": "44",
+        "currentLocation": [
+            {
+                "city": "Knoxville",
+                "gasPrice": 86159,
+                "id": "44",
+                "carId": "44"
+            }
+        ]
+    },
+    {
+        "isRented": false,
+        "priceCathegory": "standard",
+        "basePrice": "536.00",
+        "amountOfAvaliable": 16751,
+        "model": "Nissan LeBaron",
+        "avgFuelConsumption": 56555,
+        "id": "45",
+        "currentLocation": [
+            {
+                "city": "Apex",
+                "gasPrice": 5964,
+                "id": "45",
+                "carId": "45"
+            }
+        ]
+    },
+    {
+        "isRented": true,
+        "priceCathegory": "standard",
+        "basePrice": "656.00",
+        "amountOfAvaliable": 16560,
+        "model": "Dodge Element",
+        "avgFuelConsumption": 46607,
+        "id": "46",
+        "currentLocation": [
+            {
+                "city": "Coral Springs",
+                "gasPrice": 27892,
+                "id": "46",
+                "carId": "46"
+            }
+        ]
+    },
+    {
+        "isRented": true,
+        "priceCathegory": "standard",
+        "basePrice": "289.00",
+        "amountOfAvaliable": 81170,
+        "model": "Ford Grand Cherokee",
+        "avgFuelConsumption": 65158,
+        "id": "47",
+        "currentLocation": [
+            {
+                "city": "Ann Arbor",
+                "gasPrice": 70191,
+                "id": "47",
+                "carId": "47"
+            }
+        ]
+    },
+    {
+        "isRented": true,
+        "priceCathegory": "standard",
+        "basePrice": "110.00",
+        "amountOfAvaliable": 21506,
+        "model": "Bentley Civic",
+        "avgFuelConsumption": 46936,
+        "id": "48",
+        "currentLocation": [
+            {
+                "city": "Anchorage",
+                "gasPrice": 10592,
+                "id": "48",
+                "carId": "48"
+            }
+        ]
+    },
+    {
+        "isRented": true,
+        "priceCathegory": "standard",
+        "basePrice": "778.00",
+        "amountOfAvaliable": 16805,
+        "model": "Jeep Fortwo",
+        "avgFuelConsumption": 6579,
+        "id": "49",
+        "currentLocation": [
+            {
+                "city": "Mission",
+                "gasPrice": 55041,
+                "id": "49",
+                "carId": "49"
+            }
+        ]
+    },
+    {
+        "isRented": true,
+        "priceCathegory": "standard",
+        "basePrice": "400.00",
+        "amountOfAvaliable": 78538,
+        "model": "BMW ATS",
+        "avgFuelConsumption": 59249,
+        "id": "50",
+        "currentLocation": [
+            {
+                "city": "San Bruno",
+                "gasPrice": 7232,
+                "id": "50",
+                "carId": "50"
+            }
+        ]
+    }
+]
