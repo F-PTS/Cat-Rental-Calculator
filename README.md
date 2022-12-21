@@ -7,6 +7,7 @@
 -   Zod
 -   React Query
 -   Mantine
+-   Vite
 
 ## API
 
