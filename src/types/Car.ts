@@ -1,7 +1,7 @@
 export interface Car {
     id: string;
     model: string;
-    priceCategory: string;
+    priceCathegory: string;
     basePrice: string;
     amountOfAvaliable: number;
     avgFuelConsumption: number;
@@ -12,4 +12,5 @@ export interface Car {
         carId: string;
     };
     isRented: boolean;
+    image: string;
 }
