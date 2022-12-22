@@ -3,7 +3,6 @@ import {
     Navbar,
     Center,
     Stack,
-    ColorScheme,
     useMantineColorScheme,
     Anchor,
 } from "@mantine/core";
