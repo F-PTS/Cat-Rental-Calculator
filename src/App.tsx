@@ -4,6 +4,7 @@ import {
     ColorSchemeProvider,
     MantineProvider,
 } from "@mantine/core";
+import { useLocalStorage } from "@mantine/hooks";
 import React, { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AppNavbar from "./components/Navbar/AppNavbar";
@@ -12,9 +13,13 @@ import Home from "./pages/Home";
 import MissingPage from "./pages/MissingPage";
 
 function App() {
-    const [colorScheme, setColorScheme] = useState<ColorScheme>("light");
-    const toggleColorScheme = (value?: ColorScheme) =>
-        setColorScheme(value || (colorScheme === "dark" ? "light" : "dark"));
+    const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
+        key: "color-scheme",
+        defaultValue: "light",
+    });
+
+    const toggleColorScheme = () =>
+        setColorScheme((current) => (current === "dark" ? "light" : "dark"));
 
     return (
         <ColorSchemeProvider

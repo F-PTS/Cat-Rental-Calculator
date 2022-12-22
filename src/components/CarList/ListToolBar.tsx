@@ -1,16 +1,6 @@
 import { Flex } from "@mantine/core";
-import React from "react";
-
-import { useState } from "react";
-import { Pagination } from "@mantine/core";
-import usePageStore from "../store/pageStore";
 
 function ListToolBar() {
-    const { currentPage, goToPage } = usePageStore((state) => ({
-        currentPage: state.currentPage,
-        goToPage: state.goToPage,
-    }));
-
     return (
         <Flex
             m={25}
