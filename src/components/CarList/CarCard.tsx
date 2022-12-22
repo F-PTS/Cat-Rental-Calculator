@@ -16,7 +16,6 @@ import {
 } from "@tabler/icons";
 
 import cardStyles from "../../styles/cardstyles";
-import { Car } from "../../types/Car";
 
 interface CarCardProps {
     model: string;
