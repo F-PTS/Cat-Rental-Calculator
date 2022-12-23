@@ -16,6 +16,7 @@ import {
 } from "@tabler/icons";
 
 import NavbarLink from "./NavbarLink";
+import { useLocalStorage } from "@mantine/hooks";
 
 const mockdata = [
     { icon: IconHome2, label: "Home", route: "/" },
@@ -23,7 +24,10 @@ const mockdata = [
 ];
 
 function AppNavbar() {
-    const [active, setActive] = useState(0);
+    const [active, setActive] = useLocalStorage({
+        key: "active-page",
+        defaultValue: 0,
+    });
     const { colorScheme, toggleColorScheme } = useMantineColorScheme();
 
     const links = mockdata.map((link, index) => (
