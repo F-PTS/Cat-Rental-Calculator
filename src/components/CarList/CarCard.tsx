@@ -36,14 +36,14 @@ function CarCard({
 }: CarCardProps) {
     const { classes } = cardStyles();
 
-    const mockdata = [
+    const basicInformationData = [
         { label: basePrice, icon: IconCurrencyDollar },
         { label: amountOfAvaliable, icon: Icon123 },
         { label: avgFuelConsumption, icon: IconGasStation },
         { label: priceCategory, icon: IconTag },
     ];
 
-    const features = mockdata.map((feature) => (
+    const features = basicInformationData.map((feature) => (
         <Center key={feature.label}>
             <feature.icon size={18} className={classes.icon} stroke={1.5} />
             <Text size="xs">{feature.label}</Text>

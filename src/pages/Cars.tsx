@@ -1,17 +1,30 @@
-import { Center, Container, Flex, Text } from "@mantine/core";
-import React, { useEffect, useState } from "react";
+import { Container, Flex, Text } from "@mantine/core";
 import { useQuery } from "react-query";
 import CarCard from "../components/CarList/CarCard";
-import ListToolBar from "../components/CarList/ListToolBar";
+import ListToolBar from "../components/CarList/Toolbar/ListToolBar";
 import fetchCarList from "../Query/fetchCarList";
+import useFilterStore from "../Store/useFilterStore";
+import useSearchStore from "../Store/useSearchStore";
+import useSortStore from "../Store/useSortStore";
 import { Car } from "../types/Car";
+import sortAndFilter from "../utils/sortAndFilter";
 
 function Cars() {
+    const sortingCriteria = useSortStore((state) => state.sortingCriteria);
+    const filterCriteria = useFilterStore((state) => state.filterCriteria);
+    const searchingParams = useSearchStore((state) => state.searchingParams);
+
     const { isLoading, isError, data, error } = useQuery<Car[], Error>(
         "carList",
         fetchCarList,
         {
-            refetchOnWindowFocus: false,
+            select: (cars) =>
+                sortAndFilter(
+                    sortingCriteria,
+                    filterCriteria,
+                    searchingParams,
+                    cars
+                ),
         }
     );
 
@@ -41,6 +54,8 @@ function Cars() {
                             priceCategory={car.priceCathegory}
                         />
                     ))}
+
+                {}
             </Flex>
             <Container mb={50} mt={50}>
                 <Text align="center">

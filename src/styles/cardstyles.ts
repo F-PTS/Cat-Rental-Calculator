@@ -2,7 +2,7 @@ import { createStyles } from "@mantine/styles";
 
 const cardStyles = createStyles((theme) => ({
     card: {
-        width: 320,
+        width: 324,
         backgroundColor:
             theme.colorScheme === "dark" ? theme.colors.dark[7] : theme.white,
     },
