@@ -1,6 +1,6 @@
 import { Flex, TextInput } from "@mantine/core";
 import { IconSearch } from "@tabler/icons";
-import useSearchStore from "../../../Store/useSearchStore";
+import useSearchStore from "../../../Store/Toolbar/useSearchStore";
 import PriceCathegoryPicker from "./Pickers/FilterPicker";
 import SortByPicker from "./Pickers/SortByPicker";
 

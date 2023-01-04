@@ -1,5 +1,5 @@
 import create from "zustand";
-import { filterOptions } from "../types/FilterOptions";
+import { filterOptions } from "../../types/FilterOptions";
 
 interface filterStore {
     filterCriteria: filterOptions;
@@ -8,8 +8,8 @@ interface filterStore {
 
 const useFilterStore = create<filterStore>((set) => ({
     filterCriteria: "priceCathegory",
-    setFilterCriteria: (newFilterCriteria: filterOptions) =>
-        set(() => ({ filterCriteria: newFilterCriteria })),
+    setFilterCriteria: (itemsToShow) =>
+        set(() => ({ filterCriteria: itemsToShow })),
 }));
 
 export default useFilterStore;

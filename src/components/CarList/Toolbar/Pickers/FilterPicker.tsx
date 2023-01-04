@@ -15,7 +15,7 @@ import {
     IconTag,
 } from "@tabler/icons";
 import usePriceCathegoryPickerStyles from "../../../../styles/priceCathegoryPicker";
-import useFilterStore from "../../../../Store/useFilterStore";
+import useFilterStore from "../../../../Store/Toolbar/useFilterStore";
 import camelCase from "camelcase";
 import { filterOptions } from "../../../../types/FilterOptions";
 

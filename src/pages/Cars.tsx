@@ -1,11 +1,11 @@
-import { Container, Flex, Text } from "@mantine/core";
+import { Container, Flex, Loader, Stack, Text } from "@mantine/core";
 import { useQuery } from "react-query";
 import CarCard from "../components/CarList/CarCard";
 import ListToolBar from "../components/CarList/Toolbar/ListToolBar";
 import fetchCarList from "../Query/fetchCarList";
-import useFilterStore from "../Store/useFilterStore";
-import useSearchStore from "../Store/useSearchStore";
-import useSortStore from "../Store/useSortStore";
+import useFilterStore from "../Store/Toolbar/useFilterStore";
+import useSearchStore from "../Store/Toolbar/useSearchStore";
+import useSortStore from "../Store/Toolbar/useSortStore";
 import { Car } from "../types/Car";
 import sortAndFilter from "../utils/sortAndFilter";
 
@@ -28,7 +28,12 @@ function Cars() {
         }
     );
 
-    if (isLoading) return <h1>loading...</h1>;
+    if (isLoading)
+        return (
+            <Stack sx={{ height: "100%" }} justify="center" align="center">
+                <Loader />
+            </Stack>
+        );
     if (isError) return <h1>Error: {error.message}</h1>;
 
     return (
@@ -42,20 +47,7 @@ function Cars() {
                 direction="row"
                 wrap="wrap"
             >
-                {data &&
-                    data.map((car) => (
-                        <CarCard
-                            key={car.id}
-                            amountOfAvaliable={car.amountOfAvaliable}
-                            basePrice={car.basePrice}
-                            avgFuelConsumption={car.avgFuelConsumption}
-                            image={car.image}
-                            model={car.model}
-                            priceCategory={car.priceCathegory}
-                        />
-                    ))}
-
-                {}
+                {data && data.map((car) => <CarCard key={car.id} car={car} />)}
             </Flex>
             <Container mb={50} mt={50}>
                 <Text align="center">
