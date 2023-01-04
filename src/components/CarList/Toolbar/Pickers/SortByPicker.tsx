@@ -9,7 +9,7 @@ import {
     IconGasStation,
 } from "@tabler/icons";
 import usePriceCathegoryPickerStyles from "../../../../styles/priceCathegoryPicker";
-import useSortStore from "../../../../Store/useSortStore";
+import useSortStore from "../../../../Store/Toolbar/useSortStore";
 import camelCase from "camelcase";
 import { sortingOptions } from "../../../../types/SortingOptions";
 

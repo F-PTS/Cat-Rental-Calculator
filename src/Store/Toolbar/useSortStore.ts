@@ -1,5 +1,5 @@
 import create from "zustand";
-import { sortingOptions } from "../types/SortingOptions";
+import { sortingOptions } from "../../types/SortingOptions";
 
 interface sortStore {
     sortingCriteria: sortingOptions;
