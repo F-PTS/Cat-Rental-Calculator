@@ -7,6 +7,7 @@ import {
     Button,
     Center,
     Flex,
+    Modal,
 } from "@mantine/core";
 import {
     IconCurrencyDollar,
@@ -14,36 +15,47 @@ import {
     IconTag,
     IconGasStation,
 } from "@tabler/icons";
+import { useState } from "react";
+import useSelectedCarStore from "../../Store/Car/useSelectedCarStore";
 
 import cardStyles from "../../styles/cardstyles";
+import { Car } from "../../types/Car";
+import CarModal from "../CarModal";
 
 interface CarCardProps {
-    model: string;
-    priceCategory: string;
-    basePrice: string;
-    amountOfAvaliable: number;
-    avgFuelConsumption: number;
-    image: string;
+    car: Car;
 }
 
 function CarCard({
-    amountOfAvaliable,
-    basePrice,
-    avgFuelConsumption,
-    image,
-    model,
-    priceCategory,
+    car,
+    car: {
+        amountOfAvaliable,
+        basePrice,
+        avgFuelConsumption,
+        image,
+        model,
+        priceCathegory,
+    },
 }: CarCardProps) {
     const { classes } = cardStyles();
+    const [opened, setOpened] = useState(false);
+    const { setSelectedCar } = useSelectedCarStore((state) => ({
+        setSelectedCar: state.setSelectedCar,
+    }));
 
-    const mockdata = [
+    const basicInformationData = [
         { label: basePrice, icon: IconCurrencyDollar },
         { label: amountOfAvaliable, icon: Icon123 },
         { label: avgFuelConsumption, icon: IconGasStation },
-        { label: priceCategory, icon: IconTag },
+        { label: priceCathegory, icon: IconTag },
     ];
 
-    const features = mockdata.map((feature) => (
+    const handleCarSelection = () => {
+        setOpened(true);
+        setSelectedCar(car);
+    };
+
+    const features = basicInformationData.map((feature) => (
         <Center key={feature.label}>
             <feature.icon size={18} className={classes.icon} stroke={1.5} />
             <Text size="xs">{feature.label}</Text>
@@ -51,52 +63,69 @@ function CarCard({
     ));
 
     return (
-        <Card withBorder radius="md" className={classes.card}>
-            <Card.Section className={classes.imageSection}>
-                <Image src={image} alt={model} />
-            </Card.Section>
+        <>
+            <Modal
+                opened={opened}
+                onClose={() => setOpened(false)}
+                title={`Rent ${model}`}
+                overlayBlur={1}
+                size={720}
+                centered
+            >
+                <CarModal />
+            </Modal>
 
-            <Group position="apart" mt="md">
-                <Center inline w={"100%"}>
-                    <Text size="xl" weight={700}>
-                        {model}
+            <Card withBorder radius="md" className={classes.card}>
+                <Card.Section className={classes.imageSection}>
+                    <Image src={image} alt={model} />
+                </Card.Section>
+
+                <Group position="apart" mt="md">
+                    <Center inline w={"100%"}>
+                        <Text size="xl" weight={700}>
+                            {model}
+                        </Text>
+                    </Center>
+                </Group>
+
+                <Card.Section className={classes.section} mt="md">
+                    <Text size="sm" color="dimmed" className={classes.label}>
+                        Basic information
                     </Text>
-                </Center>
-            </Group>
 
-            <Card.Section className={classes.section} mt="md">
-                <Text size="sm" color="dimmed" className={classes.label}>
-                    Basic information
-                </Text>
+                    <Group spacing={8} mb={-8}>
+                        {features}
+                    </Group>
+                </Card.Section>
 
-                <Group spacing={8} mb={-8}>
-                    {features}
-                </Group>
-            </Card.Section>
+                <Card.Section className={classes.section}>
+                    <Group spacing={30}>
+                        <div>
+                            <Text size="xl" weight={700} sx={{ lineHeight: 1 }}>
+                                {basePrice}$
+                            </Text>
+                            <Text
+                                size="sm"
+                                color="dimmed"
+                                weight={500}
+                                sx={{ lineHeight: 1 }}
+                                mt={3}
+                            >
+                                per day
+                            </Text>
+                        </div>
 
-            <Card.Section className={classes.section}>
-                <Group spacing={30}>
-                    <div>
-                        <Text size="xl" weight={700} sx={{ lineHeight: 1 }}>
-                            {basePrice}$
-                        </Text>
-                        <Text
-                            size="sm"
-                            color="dimmed"
-                            weight={500}
-                            sx={{ lineHeight: 1 }}
-                            mt={3}
+                        <Button
+                            radius="xl"
+                            style={{ flex: 1 }}
+                            onClick={handleCarSelection}
                         >
-                            per day
-                        </Text>
-                    </div>
-
-                    <Button radius="xl" style={{ flex: 1 }}>
-                        Rent now
-                    </Button>
-                </Group>
-            </Card.Section>
-        </Card>
+                            Rent now
+                        </Button>
+                    </Group>
+                </Card.Section>
+            </Card>
+        </>
     );
 }
 export default CarCard;
